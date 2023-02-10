@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .animated-container {
+  background-color: dodgerblue;
+  width: 1000px;
+  height: 400px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.animated-container img:nth-child(1) {
+  position: absolute;
+  height: 400px;
+}
+
+.animated-container img:nth-child(2) {
+  position: absolute;
+  height: 400px;
+  animation-name: move1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
+}
+
+@keyframes move1 {
+  from {
+    left: 0;
+  }
+  to {
+    left: -30px;
+  }
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -30px;
+  }
+} */
+
+.animated-container {
+  position: relative;
+  width: 70%;
+  margin: 30px auto;
+  background-color: dodgerblue;
+}
+
+.animated-container img {
+  width: 50%;
+}
+
+.elements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: move;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-15px, 0px);
+  }
+
+  50% {
+    transform: translate(0px, -15px);
+  }
+
+  100% {
+    transform: translate(-15px, 0px);
+  }
+}
